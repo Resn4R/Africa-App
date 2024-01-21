@@ -25,6 +25,8 @@
 		4F557AE52B558AC900F7DA11 /* MApView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F557AE42B558AC900F7DA11 /* MApView.swift */; };
 		4F557AE72B558ADC00F7DA11 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F557AE62B558ADC00F7DA11 /* GalleryView.swift */; };
 		4F557AE92B558AE700F7DA11 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F557AE82B558AE700F7DA11 /* MainView.swift */; };
+		4FBE8E7E2B5D78D30062B909 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE8E7D2B5D78D30062B909 /* CoverImageView.swift */; };
+		4FBE8E812B5D7AFB0062B909 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE8E802B5D7AFB0062B909 /* CoverImageModel.swift */; };
 		4FD725D32B542E950011198B /* Africa_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD725D22B542E950011198B /* Africa_AppApp.swift */; };
 		4FD725D52B542E950011198B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD725D42B542E950011198B /* ContentView.swift */; };
 		4FD725D72B542E970011198B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD725D62B542E970011198B /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		4F557AE42B558AC900F7DA11 /* MApView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MApView.swift; sourceTree = "<group>"; };
 		4F557AE62B558ADC00F7DA11 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		4F557AE82B558AE700F7DA11 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4FBE8E7D2B5D78D30062B909 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
+		4FBE8E802B5D7AFB0062B909 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		4FD725CF2B542E950011198B /* Africa App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Africa App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD725D22B542E950011198B /* Africa_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Africa_AppApp.swift; sourceTree = "<group>"; };
 		4FD725D42B542E950011198B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,8 +110,25 @@
 				4F557AE42B558AC900F7DA11 /* MApView.swift */,
 				4F557AE62B558ADC00F7DA11 /* GalleryView.swift */,
 				4F557AE82B558AE700F7DA11 /* MainView.swift */,
+				4FBE8E7C2B5D78B60062B909 /* View */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		4FBE8E7C2B5D78B60062B909 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FBE8E7D2B5D78D30062B909 /* CoverImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FBE8E7F2B5D7AA60062B909 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4FBE8E802B5D7AFB0062B909 /* CoverImageModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4FD725C62B542E950011198B = {
@@ -129,6 +150,7 @@
 		4FD725D12B542E950011198B /* Africa App */ = {
 			isa = PBXGroup;
 			children = (
+				4FBE8E7F2B5D7AA60062B909 /* Model */,
 				4F557AE02B5588CF00F7DA11 /* Africa-App-Info.plist */,
 				4F557AE12B55897800F7DA11 /* App */,
 				4F557AD72B55881200F7DA11 /* Data */,
@@ -233,6 +255,8 @@
 			files = (
 				4FD725D52B542E950011198B /* ContentView.swift in Sources */,
 				4F557AE92B558AE700F7DA11 /* MainView.swift in Sources */,
+				4FBE8E7E2B5D78D30062B909 /* CoverImageView.swift in Sources */,
+				4FBE8E812B5D7AFB0062B909 /* CoverImageModel.swift in Sources */,
 				4F557AE52B558AC900F7DA11 /* MApView.swift in Sources */,
 				4FD725D32B542E950011198B /* Africa_AppApp.swift in Sources */,
 				4F557AE32B558ABF00F7DA11 /* VideoListView.swift in Sources */,
