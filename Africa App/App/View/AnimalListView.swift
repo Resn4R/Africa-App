@@ -35,7 +35,6 @@ struct AnimalListView: View {
     }
 }
 
-//#Preview {
-//    let animals: [Animal] = Bundle.main.decode("animals.json")
-//    AnimalListView(animal: animals[1])
-//}
+#Preview {
+    AnimalListView(animal: animals[0])
+}

@@ -19,7 +19,11 @@ struct ContentView: View {
                     .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
                 
                 ForEach(animals) { animal in
+                    NavigationLink {
+                        //AnimalDetailView(animal: animal)
+                    } label: {
                         AnimalListView(animal: animal)
+                    }
                 }
             }
             .navigationBarTitle("Africa", displayMode: .large)
