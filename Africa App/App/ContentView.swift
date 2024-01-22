@@ -20,7 +20,7 @@ struct ContentView: View {
                 
                 ForEach(animals) { animal in
                     NavigationLink {
-                        //AnimalDetailView(animal: animal)
+                        AnimalDetailView(animal: animal)
                     } label: {
                         AnimalListView(animal: animal)
                     }
