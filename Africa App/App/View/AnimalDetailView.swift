@@ -44,11 +44,10 @@ struct AnimalDetailView: View {
                     }
                     .padding(.horizontal)
                 }
-                
                 InsetGalleryView(animal: animal)
-                
+                    .frame(height: 220)
             }
-            .navigationBarTitle("Learn About Zebras", displayMode: .inline)
+            .navigationBarTitle("Learn About \(animal.name)s", displayMode: .inline)
         }
     }
 }

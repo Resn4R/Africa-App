@@ -11,17 +11,16 @@ struct InsetGalleryView: View {
     let animal: Animal
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false){
-            HStack {
+        TabView {
                 ForEach(animal.gallery, id: \.self) { image in
                     Image(image)
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 200)
                         .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .frame(width: 350, height: 400)
                 }
-            }
         }
+        .tabViewStyle(PageTabViewStyle())
     }
 }
 
