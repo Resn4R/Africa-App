@@ -66,6 +66,14 @@ struct AnimalDetailView: View {
                 Section {
                     GroupHeaderLabelView(image: "map", text: "National Parks")
                     InsetMapView()
+                        .disabled(true)
+                }
+                .padding(.horizontal)
+
+                //learn more
+                Section {
+                    GroupHeaderLabelView(image: "books.vertical", text: "Learn More")
+                    ExternalWeblinkView(animal: animal)
                 }
                 .padding(.horizontal)
 
@@ -75,7 +83,6 @@ struct AnimalDetailView: View {
     }
 }
 
-let animals: [Animal] = Bundle.main.decode("animals.json")
 #Preview {
     NavigationStack {
         AnimalDetailView(animal: animals[0])

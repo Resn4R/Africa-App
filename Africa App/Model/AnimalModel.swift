@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let animals: [Animal] = Bundle.main.decode("animals.json")
+
 struct Animal: Codable, Identifiable {
     let id: String
     
