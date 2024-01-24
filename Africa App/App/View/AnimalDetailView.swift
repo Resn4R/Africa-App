@@ -6,17 +6,20 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct AnimalDetailView: View {
     let animal: Animal
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            VStack(alignment: .center, spacing: 20) {
+            VStack(alignment: .center, spacing: 30) {
                 Image(animal.image)
                     .resizable()
                     .scaledToFill()
-                                
+                
+                //Title and Header
+                Section {
                     Text(animal.name.uppercased())
                         .font(.system(size: 35, weight: .heavy))
                         .multilineTextAlignment(.center)
@@ -27,25 +30,45 @@ struct AnimalDetailView: View {
                                 .frame(height: 6)
                                 .offset(y: 24)
                         )
-
+                    
                     Text(animal.headline)
                         .font(.headline)
                         .multilineTextAlignment(.leading)
                         .foregroundStyle(.accent)
                         .padding(.horizontal)
-
-                
-                Group {
-                    HStack {
-                        Image(systemName: "photo.on.rectangle.angled")
-                            .foregroundStyle(.accent)
-                        Text("Wilderness in Pictures")
-                            .foregroundStyle(.white)
-                    }
-                    .padding(.horizontal)
                 }
-                InsetGalleryView(animal: animal)
-                    .frame(height: 220)
+                
+                //Wilderness in Pictures
+                Section {
+                    GroupHeaderLabelView(image: "photo.on.rectangle.angled", text: "Wilderness in Pictures")
+                    
+                    InsetGalleryView(animal: animal)
+                        .frame(height: 220)
+                }
+                
+                //Did you know?
+                Section {
+                    GroupHeaderLabelView(image: "questionmark.circle", text: "Did you know?")
+                    InsetFactsView(animal: animal)
+                }
+                .padding(.horizontal)
+                
+                //Description
+                Section {
+                    GroupHeaderLabelView(image: "info.circle", text: "All about \(animal.name)s")
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                }
+                .padding(.horizontal)
+                
+                //Map
+                Section {
+                    GroupHeaderLabelView(image: "map", text: "National Parks")
+                    
+                }
+                .padding(.horizontal)
+
             }
             .navigationBarTitle("Learn About \(animal.name)s", displayMode: .inline)
         }

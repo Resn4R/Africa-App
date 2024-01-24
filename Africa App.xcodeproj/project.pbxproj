@@ -32,6 +32,9 @@
 		4FBE8E882B5ED4250062B909 /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE8E872B5ED4250062B909 /* AnimalModel.swift */; };
 		4FBE8E8A2B5ED89D0062B909 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE8E892B5ED89D0062B909 /* AnimalDetailView.swift */; };
 		4FBE8E8E2B5EE4120062B909 /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE8E8D2B5EE4120062B909 /* InsetGalleryView.swift */; };
+		4FBE8E902B616A9B0062B909 /* GroupHeaderLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE8E8F2B616A9B0062B909 /* GroupHeaderLabelView.swift */; };
+		4FBE8E922B616B960062B909 /* InsetFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE8E912B616B960062B909 /* InsetFactsView.swift */; };
+		4FBE8E942B616F7C0062B909 /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE8E932B616F7C0062B909 /* InsetMapView.swift */; };
 		4FD725D32B542E950011198B /* Africa_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD725D22B542E950011198B /* Africa_AppApp.swift */; };
 		4FD725D52B542E950011198B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD725D42B542E950011198B /* ContentView.swift */; };
 		4FD725D72B542E970011198B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD725D62B542E970011198B /* Assets.xcassets */; };
@@ -65,6 +68,9 @@
 		4FBE8E872B5ED4250062B909 /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 		4FBE8E892B5ED89D0062B909 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
 		4FBE8E8D2B5EE4120062B909 /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
+		4FBE8E8F2B616A9B0062B909 /* GroupHeaderLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeaderLabelView.swift; sourceTree = "<group>"; };
+		4FBE8E912B616B960062B909 /* InsetFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactsView.swift; sourceTree = "<group>"; };
+		4FBE8E932B616F7C0062B909 /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		4FD725CF2B542E950011198B /* Africa App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Africa App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD725D22B542E950011198B /* Africa_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Africa_AppApp.swift; sourceTree = "<group>"; };
 		4FD725D42B542E950011198B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 				4F557AE62B558ADC00F7DA11 /* GalleryView.swift */,
 				4F557AE82B558AE700F7DA11 /* MainView.swift */,
 				4FBE8E7C2B5D78B60062B909 /* View */,
+				4FBE8E822B5D7BE30062B909 /* Extention */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -131,8 +138,10 @@
 				4FBE8E7D2B5D78D30062B909 /* CoverImageView.swift */,
 				4FBE8E852B5ED2B80062B909 /* AnimalListView.swift */,
 				4FBE8E892B5ED89D0062B909 /* AnimalDetailView.swift */,
-				4FBE8E822B5D7BE30062B909 /* Extention */,
 				4FBE8E8D2B5EE4120062B909 /* InsetGalleryView.swift */,
+				4FBE8E912B616B960062B909 /* InsetFactsView.swift */,
+				4FBE8E8F2B616A9B0062B909 /* GroupHeaderLabelView.swift */,
+				4FBE8E932B616F7C0062B909 /* InsetMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,7 +291,10 @@
 				4FBE8E7E2B5D78D30062B909 /* CoverImageView.swift in Sources */,
 				4FBE8E812B5D7AFB0062B909 /* CoverImageModel.swift in Sources */,
 				4FBE8E8A2B5ED89D0062B909 /* AnimalDetailView.swift in Sources */,
+				4FBE8E902B616A9B0062B909 /* GroupHeaderLabelView.swift in Sources */,
 				4FBE8E882B5ED4250062B909 /* AnimalModel.swift in Sources */,
+				4FBE8E922B616B960062B909 /* InsetFactsView.swift in Sources */,
+				4FBE8E942B616F7C0062B909 /* InsetMapView.swift in Sources */,
 				4F557AE52B558AC900F7DA11 /* MApView.swift in Sources */,
 				4FBE8E842B5D7BF30062B909 /* CodableBundleExtention.swift in Sources */,
 				4FD725D32B542E950011198B /* Africa_AppApp.swift in Sources */,
