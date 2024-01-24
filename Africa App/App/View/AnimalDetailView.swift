@@ -65,7 +65,7 @@ struct AnimalDetailView: View {
                 //Map
                 Section {
                     GroupHeaderLabelView(image: "map", text: "National Parks")
-                    
+                    InsetMapView()
                 }
                 .padding(.horizontal)
 
