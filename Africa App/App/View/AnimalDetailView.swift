@@ -17,6 +17,7 @@ struct AnimalDetailView: View {
                 Image(animal.image)
                     .resizable()
                     .scaledToFill()
+                    .padding(.horizontal)
                 
                 //Title and Header
                 Section {
@@ -37,6 +38,7 @@ struct AnimalDetailView: View {
                         .foregroundStyle(.accent)
                         .padding(.horizontal)
                 }
+                .padding(.horizontal)
                 
                 //Wilderness in Pictures
                 Section {
@@ -45,6 +47,7 @@ struct AnimalDetailView: View {
                     InsetGalleryView(animal: animal)
                         .frame(height: 220)
                 }
+                .padding(.horizontal)
                 
                 //Did you know?
                 Section {
