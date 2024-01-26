@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct VideoListItem: View {
+struct VideoListItemView: View {
     let video: VideoModel
     
     var body: some View {
@@ -41,5 +41,5 @@ struct VideoListItem: View {
 }
 
 #Preview {
-    VideoListItem(video: videos[0])
+    VideoListItemView(video: videos[0])
 }
