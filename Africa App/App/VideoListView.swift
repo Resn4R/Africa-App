@@ -21,6 +21,7 @@ struct VideoListView: View {
                     } label: {
                         VideoListItemView(video: video)
                             .padding(.vertical, 8)
+                        
                     }
                 }
                 .listStyle(InsetGroupedListStyle())
