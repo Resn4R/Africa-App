@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F45BE0A2B698CCA0002FE77 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F45BE092B698CC90002FE77 /* LocationModel.swift */; };
 		4F4AE1E02B6436AE00A03174 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4AE1DF2B6436AE00A03174 /* VideoModel.swift */; };
 		4F4AE1E22B64371900A03174 /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4AE1E12B64371900A03174 /* VideoListItemView.swift */; };
 		4F4AE1E42B643C9B00A03174 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4AE1E32B643C9B00A03174 /* VideoPlayerView.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F45BE092B698CC90002FE77 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		4F4AE1DF2B6436AE00A03174 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		4F4AE1E12B64371900A03174 /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
 		4F4AE1E32B643C9B00A03174 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				4FBE8E802B5D7AFB0062B909 /* CoverImageModel.swift */,
 				4FBE8E872B5ED4250062B909 /* AnimalModel.swift */,
 				4F4AE1DF2B6436AE00A03174 /* VideoModel.swift */,
+				4F45BE092B698CC90002FE77 /* LocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				4F557AE92B558AE700F7DA11 /* MainView.swift in Sources */,
 				4FBE8E7E2B5D78D30062B909 /* CoverImageView.swift in Sources */,
 				4FBE8E812B5D7AFB0062B909 /* CoverImageModel.swift in Sources */,
+				4F45BE0A2B698CCA0002FE77 /* LocationModel.swift in Sources */,
 				4FBE8E8A2B5ED89D0062B909 /* AnimalDetailView.swift in Sources */,
 				4FBE8E902B616A9B0062B909 /* GroupHeaderLabelView.swift in Sources */,
 				4FBE8E882B5ED4250062B909 /* AnimalModel.swift in Sources */,
