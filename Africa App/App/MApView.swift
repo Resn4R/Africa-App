@@ -42,7 +42,9 @@ struct MapView: View {
             .padding(.vertical, 12)
             .padding(.horizontal, 16)
             .background(
-                .black
+                Color.black
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .opacity(0.6)
             )
         }
     }
