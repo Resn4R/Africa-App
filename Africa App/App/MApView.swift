@@ -9,8 +9,42 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+
+    @State private var cameraPosition: MapCameraPosition = {
+        
+        let mapCoordinates = CLLocationCoordinate2D(latitude: 6.600286, longitude: 16.4377599)
+        let mapZoomLevel = MKCoordinateSpan(latitudeDelta: 70, longitudeDelta: 70)
+        
+        let mapRegion = MKCoordinateRegion(center: mapCoordinates, span: mapZoomLevel)
+        
+        let cameraPos = MapCameraPosition.region(mapRegion)
+        
+        return cameraPos
+    }()
+    
+    let locations: [NationalParkLocation] = Bundle.main.decode("locations.json")
+    
     var body: some View {
-        Text("Map")
+        Map(position: $cameraPosition) {
+            ForEach(locations) { location in
+                Annotation("", coordinate: location.location) {
+                    MapAnnotationView(location: location)
+                }
+            }
+        }
+        .overlay {
+            HStack (alignment: .center, spacing: 12) {
+                Image("compass")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 48, height: 48)
+            }
+            .padding(.vertical, 12)
+            .padding(.horizontal, 16)
+            .background(
+                .black
+            )
+        }
     }
 }
 
