@@ -17,7 +17,7 @@ struct MotionAnimationView: View {
                     Circle()
                         .foregroundStyle(.gray)
                         .opacity(0.15)
-                        .frame(width: 256, height: 256, alignment: .center)
+                        .frame(width: randomSize(), height: randomSize(), alignment: .center)
                         .position(
                             x: randomCoordinate(max: geometry.size.width),
                             y: randomCoordinate(max: geometry.size.height)
@@ -31,6 +31,10 @@ struct MotionAnimationView: View {
     
     func randomCoordinate(max: CGFloat) -> CGFloat {
         CGFloat.random(in: 0...max)
+    }
+    
+    func randomSize() -> CGFloat {
+        CGFloat.random(in: 10...300)
     }
     
 }
