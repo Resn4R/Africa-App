@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MotionAnimationView: View {
     @State private var randomCircle = Int.random(in: 12...16)
+    @State private var isAnimating = false
     
     var body: some View {
         GeometryReader { geometry in
@@ -22,7 +23,16 @@ struct MotionAnimationView: View {
                             x: randomCoordinate(max: geometry.size.width),
                             y: randomCoordinate(max: geometry.size.height)
                         )
-                        .scaleEffect(randomScale())
+                        .scaleEffect(isAnimating ? randomScale() : 1)
+                        .animation(.interpolatingSpring(stiffness: 0.5, damping: 0.5)
+                            .repeatForever(autoreverses: false)
+                            .speed(2)
+                            .delay(1)
+                                   , value: isAnimating
+                        )
+                        .onAppear {
+                            isAnimating = true
+                        }
                 }
                 
                 Text("width: \(Int(geometry.size.width))\nHeight: \(geometry.size.height)")
