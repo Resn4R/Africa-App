@@ -22,6 +22,7 @@ struct MotionAnimationView: View {
                             x: randomCoordinate(max: geometry.size.width),
                             y: randomCoordinate(max: geometry.size.height)
                         )
+                        .scaleEffect(randomScale())
                 }
                 
                 Text("width: \(Int(geometry.size.width))\nHeight: \(geometry.size.height)")
@@ -35,6 +36,10 @@ struct MotionAnimationView: View {
     
     func randomSize() -> CGFloat {
         CGFloat.random(in: 10...300)
+    }
+    
+    func randomScale() -> CGFloat {
+        CGFloat.random(in: 0.1...2.0)
     }
     
 }
