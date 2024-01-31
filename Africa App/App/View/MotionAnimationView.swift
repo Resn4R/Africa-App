@@ -37,6 +37,7 @@ struct MotionAnimationView: View {
                 
                 Text("width: \(Int(geometry.size.width))\nHeight: \(geometry.size.height)")
             }
+            .drawingGroup()
         }
     }
     
