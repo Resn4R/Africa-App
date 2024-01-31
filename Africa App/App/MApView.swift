@@ -59,7 +59,7 @@ struct MapView: View {
                         
                         Spacer()
                         
-                        Text("\(region.center.latitude)")
+                        Text("\(getCoordinates().center.latitude)")
                             .font(.footnote)
                             .foregroundStyle(.white)
                     }
@@ -71,7 +71,7 @@ struct MapView: View {
                         
                         Spacer()
                         
-                        Text("\(region.center.longitude)")
+                        Text("\(getCoordinates().center.longitude)")
                             .font(.footnote)
                             .foregroundStyle(.white)
                     }
@@ -87,6 +87,11 @@ struct MapView: View {
             .padding()
             , alignment: .top
         )
+    }
+    
+    func getCoordinates() -> MKCoordinateRegion {
+        guard let cameraRegion = cameraPosition.region else { return region }
+        return cameraRegion
     }
 }
 
