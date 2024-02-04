@@ -15,8 +15,6 @@ struct GalleryView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(MotionAnimationView())
         
-        
-        
     }
 }
 
