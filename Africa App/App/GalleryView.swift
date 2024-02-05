@@ -10,7 +10,14 @@ import SwiftUI
 struct GalleryView: View {
     @State private var selectedAnimal: String = "lion"
     
-    let gridLayout = Array(repeating: GridItem(.flexible()), count: 3)
+        //let gridLayout = Array(repeating: GridItem(.flexible()), count: 3)
+    
+    @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
+    @State private var gridColumn = 3.0
+    
+    func gridSwitch() {
+        gridLayout = Array(repeating: .init(.flexible()), count: Int(gridColumn))
+    }
     
     let animals: [Animal] = Bundle.main.decode("animals.json")
     
@@ -24,6 +31,14 @@ struct GalleryView: View {
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 8))
                 
+                Slider(value: $gridColumn, in: 2...4, step: 1)
+                    .padding(.horizontal)
+                    .onChange(of: gridColumn) { _, _ in
+                        withAnimation(.easeIn) {
+                            gridSwitch()
+                        }
+                    }
+                
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
                     ForEach(animals) { animal in
                         Image(animal.image)
@@ -35,6 +50,9 @@ struct GalleryView: View {
                                 selectedAnimal = animal.image
                             }
                     }
+                }
+                .onAppear {
+                    gridSwitch()
                 }
             }
         }
