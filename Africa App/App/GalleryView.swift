@@ -10,8 +10,8 @@ import SwiftUI
 struct GalleryView: View {
     @State private var selectedAnimal: String = "lion"
     
-        //let gridLayout = Array(repeating: GridItem(.flexible()), count: 3)
-    
+    let haptics = UIImpactFeedbackGenerator(style: .light)
+
     @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
     @State private var gridColumn = 3.0
     
@@ -37,6 +37,7 @@ struct GalleryView: View {
                         withAnimation(.easeIn) {
                             gridSwitch()
                         }
+                        haptics.impactOccurred()
                     }
                 
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {

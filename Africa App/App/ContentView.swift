@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     let animals: [Animal] = Bundle.main.decode("animals.json")
+    let haptics = UIImpactFeedbackGenerator(style: .medium)
+    
+    @State private var isGridActive = false
     
     var body: some View {
         NavigationStack {
@@ -27,6 +30,29 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle("Africa", displayMode: .large)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    HStack(spacing: 16) {
+                        Button {
+                            isGridActive = false
+                            haptics.impactOccurred()
+                        } label: {
+                            Image(systemName: "square.fill.text.grid.1x2")
+                                .font(.title2)
+                                .foregroundStyle(isGridActive ? Color.white : Color.accentColor)
+                        }
+                        
+                        Button {
+                            isGridActive = true
+                            haptics.impactOccurred()
+                        } label: {
+                            Image(systemName: "square.grid.2x2")
+                                .font(.title2)
+                                .foregroundStyle(isGridActive ? Color.accentColor : Color.white)
+                        }
+                    }
+                }
+            }
         }
     }
 }
