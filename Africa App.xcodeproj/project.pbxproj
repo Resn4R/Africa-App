@@ -47,6 +47,7 @@
 		4FD725D52B542E950011198B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD725D42B542E950011198B /* ContentView.swift */; };
 		4FD725D72B542E970011198B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD725D62B542E970011198B /* Assets.xcassets */; };
 		4FD725DA2B542E970011198B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD725D92B542E970011198B /* Preview Assets.xcassets */; };
+		4FDEC5042B710D76009F6568 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDEC5032B710D76009F6568 /* AnimalGridItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		4FD725D42B542E950011198B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4FD725D62B542E970011198B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FD725D92B542E970011198B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4FDEC5032B710D76009F6568 /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				4F4AE1E12B64371900A03174 /* VideoListItemView.swift */,
 				4F4AE1E32B643C9B00A03174 /* VideoPlayerView.swift */,
 				4F2FB8192B6B0213001A869A /* MotionAnimationView.swift */,
+				4FDEC5032B710D76009F6568 /* AnimalGridItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				4FBE8E842B5D7BF30062B909 /* CodableBundleExtention.swift in Sources */,
 				4F4AE1E02B6436AE00A03174 /* VideoModel.swift in Sources */,
 				4FD725D32B542E950011198B /* Africa_AppApp.swift in Sources */,
+				4FDEC5042B710D76009F6568 /* AnimalGridItemView.swift in Sources */,
 				4F557AE32B558ABF00F7DA11 /* VideoListView.swift in Sources */,
 				4F4AE1E22B64371900A03174 /* VideoListItemView.swift in Sources */,
 				4F557AE72B558ADC00F7DA11 /* GalleryView.swift in Sources */,

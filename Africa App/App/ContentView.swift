@@ -10,31 +10,51 @@ import SwiftUI
 struct ContentView: View {
     
     let animals: [Animal] = Bundle.main.decode("animals.json")
+    
     let haptics = UIImpactFeedbackGenerator(style: .medium)
     
     @State private var isGridActive = false
     
+    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+    
     var body: some View {
         NavigationStack {
-            List {
-                CoverImageView()
-                    .frame(height: 300)
-                    .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
-                
-                ForEach(animals) { animal in
-                    NavigationLink {
-                        AnimalDetailView(animal: animal)
-                    } label: {
-                        AnimalListView(animal: animal)
+            Group {
+                if !isGridActive {
+                    List {
+                        CoverImageView()
+                            .frame(height: 300)
+                            .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+                        
+                        ForEach(animals) { animal in
+                            NavigationLink {
+                                AnimalDetailView(animal: animal)
+                            } label: {
+                                AnimalListView(animal: animal)
+                            }
+                        }
                     }
+                } else {
+                    ScrollView(.vertical) {
+                        LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
+                            ForEach(animals) { animal in
+                                    AnimalGridItemView(animal: animal)
+                                    .padding(10)
+                            }
+                        }
+                    }
+                    .scrollIndicators(.hidden)
                 }
             }
+            
             .navigationBarTitle("Africa", displayMode: .large)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     HStack(spacing: 16) {
                         Button {
-                            isGridActive = false
+                            withAnimation(.easeIn){
+                                isGridActive = false
+                            }
                             haptics.impactOccurred()
                         } label: {
                             Image(systemName: "square.fill.text.grid.1x2")
@@ -43,7 +63,9 @@ struct ContentView: View {
                         }
                         
                         Button {
-                            isGridActive = true
+                            withAnimation(.easeIn){
+                                isGridActive = true
+                            }
                             haptics.impactOccurred()
                         } label: {
                             Image(systemName: "square.grid.2x2")
