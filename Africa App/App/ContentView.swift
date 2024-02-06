@@ -71,6 +71,8 @@ struct ContentView: View {
                         Button {
                             withAnimation(.easeIn){
                                 isGridActive = true
+                                haptics.impactOccurred()
+                                gridSwitch()
                             }
                             haptics.impactOccurred()
                         } label: {
