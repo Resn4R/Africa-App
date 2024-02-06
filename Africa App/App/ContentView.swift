@@ -21,6 +21,15 @@ struct ContentView: View {
     func gridSwitch() {
         gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
         gridColumn = gridLayout.count
+        switch gridColumn {
+        case 1:
+            toolbarIcon = "square.grid.2x2"
+        case 2:
+            toolbarIcon = "square.grid.3x2"
+        case 3:
+            toolbarIcon = "rectangle.grid.1x2"
+        default: toolbarIcon = "square.grid.2x2"
+        }
     }
     
     var body: some View {
@@ -76,7 +85,7 @@ struct ContentView: View {
                             }
                             haptics.impactOccurred()
                         } label: {
-                            Image(systemName: "square.grid.2x2")
+                            Image(systemName: toolbarIcon)
                                 .font(.title2)
                                 .foregroundStyle(isGridActive ? Color.accentColor : Color.white)
                         }
