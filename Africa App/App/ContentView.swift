@@ -18,6 +18,10 @@ struct ContentView: View {
     @State private var gridColumn = 1
     @State private var toolbarIcon = "square.grid.2x2"
     
+    func gridSwitch() {
+        gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
+    }
+    
     var body: some View {
         NavigationStack {
             Group {
