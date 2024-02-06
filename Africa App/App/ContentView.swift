@@ -14,8 +14,9 @@ struct ContentView: View {
     let haptics = UIImpactFeedbackGenerator(style: .medium)
     
     @State private var isGridActive = false
-    
-    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+    @State private var gridLayout = [ GridItem(.flexible()) ]
+    @State private var gridColumn = 1
+    @State private var toolbarIcon = "square.grid.2x2"
     
     var body: some View {
         NavigationStack {
