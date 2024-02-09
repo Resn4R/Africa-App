@@ -51,6 +51,7 @@
 		4FDEC5252B741306009F6568 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDEC5242B741306009F6568 /* Stickers.xcassets */; };
 		4FDEC5292B741306009F6568 /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4FDEC5222B741305009F6568 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4FDEC5782B76A5EA009F6568 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDEC5772B76A5EA009F6568 /* CreditsView.swift */; };
+		4FDEC57A2B76A762009F6568 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDEC5792B76A762009F6568 /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		4FDEC5242B741306009F6568 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		4FDEC5262B741306009F6568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FDEC5772B76A5EA009F6568 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		4FDEC5792B76A762009F6568 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 			children = (
 				4FBE8E832B5D7BF30062B909 /* CodableBundleExtention.swift */,
 				4F4AE1E52B643D9700A03174 /* VideoPlayerHelper.swift */,
+				4FDEC5792B76A762009F6568 /* CenterModifier.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				4FDEC5782B76A5EA009F6568 /* CreditsView.swift in Sources */,
 				4F557AE72B558ADC00F7DA11 /* GalleryView.swift in Sources */,
 				4F2FB81A2B6B0213001A869A /* MotionAnimationView.swift in Sources */,
+				4FDEC57A2B76A762009F6568 /* CenterModifier.swift in Sources */,
 				4FBE8E8E2B5EE4120062B909 /* InsetGalleryView.swift in Sources */,
 				4F4AE1E42B643C9B00A03174 /* VideoPlayerView.swift in Sources */,
 			);

@@ -49,6 +49,7 @@ struct ContentView: View {
                             }
                         }
                         CreditsView()
+                            .modifier(CenterModifier())
                     }
                 } else {
                     ScrollView(.vertical) {
