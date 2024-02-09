@@ -50,6 +50,7 @@
 		4FDEC5042B710D76009F6568 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDEC5032B710D76009F6568 /* AnimalGridItemView.swift */; };
 		4FDEC5252B741306009F6568 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDEC5242B741306009F6568 /* Stickers.xcassets */; };
 		4FDEC5292B741306009F6568 /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4FDEC5222B741305009F6568 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4FDEC5782B76A5EA009F6568 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDEC5772B76A5EA009F6568 /* CreditsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		4FDEC5222B741305009F6568 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDEC5242B741306009F6568 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		4FDEC5262B741306009F6568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FDEC5772B76A5EA009F6568 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				4F4AE1E32B643C9B00A03174 /* VideoPlayerView.swift */,
 				4F2FB8192B6B0213001A869A /* MotionAnimationView.swift */,
 				4FDEC5032B710D76009F6568 /* AnimalGridItemView.swift */,
+				4FDEC5772B76A5EA009F6568 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				4FDEC5042B710D76009F6568 /* AnimalGridItemView.swift in Sources */,
 				4F557AE32B558ABF00F7DA11 /* VideoListView.swift in Sources */,
 				4F4AE1E22B64371900A03174 /* VideoListItemView.swift in Sources */,
+				4FDEC5782B76A5EA009F6568 /* CreditsView.swift in Sources */,
 				4F557AE72B558ADC00F7DA11 /* GalleryView.swift in Sources */,
 				4F2FB81A2B6B0213001A869A /* MotionAnimationView.swift in Sources */,
 				4FBE8E8E2B5EE4120062B909 /* InsetGalleryView.swift in Sources */,
